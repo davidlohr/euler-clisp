@@ -12,7 +12,7 @@ Why in CLisp?
 ----------------------
 Well, why not? Lisp is both a powerful and beautiful programming language. 
 Functional programming goes very well with these kind of mathematical problems as you can express the algorithms in a clear and concise manner.
-Further I really wanted to practise my Lisp, which over the years has become rusty.
+Further, I really wanted to practise my Lisp, which has become rusty over the years.
 
 How to use these programs?
 --------------------------
