@@ -20,15 +20,7 @@
 ; Description: The prime factors of 13195 are 5, 7, 13 and 29.
 ; Problem: What is the largest prime factor of the number 600851475143 ?
 
-(defun is-prime (num)
-  (if (< 2 num)
-      (do ((dividend 2 (1+ dividend))
-	   (chk-to (sqrt num)))
-	  ((equal (rem num dividend) 0))
-	(when (<= chk-to dividend)
-	  (return t)))
-    t)
-  )
+(require "math.lisp")
 
 (defun problem-3 (num)
   (loop for i from (floor (sqrt num)) downto 1

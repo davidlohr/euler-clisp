@@ -25,15 +25,22 @@
 ; Problem: By considering the terms in the Fibonacci sequence whose values
 ;          do not exceed four million find the sum of the even-valued terms.
 
-(require "math.lisp")
+(defun factorial (n)
+  (if (zerop n)
+      1
+    (* n (factorial (- n 1)))))
 
-(defun problem-2 (max)
-  (setf a 0)
-  (setf sum 0)
-  (loop
-   (setf num (fibonacci (incf a)))
-   (if (evenp num)
-       (incf sum num))
-   (when (> num max) (return sum))))
+(defun fibonacci (x)
+  (if (<= x 2)
+      1
+    (+ (fibonacci (- x 2)) (fibonacci (- x 1)))))
 
-(print (problem-2 4000000))
+(defun is-prime (num)
+  (if (< 2 num)
+      (do ((dividend 2 (1+ dividend))
+	   (chk-to (sqrt num)))
+	  ((equal (rem num dividend) 0))
+	(when (<= chk-to dividend)
+	  (return t)))
+    t)
+  )

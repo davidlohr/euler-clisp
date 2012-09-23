@@ -24,10 +24,7 @@
 ;
 ; Problem: Find the sum of the digits in the number 100!
 
-(defun factorial (n)
-  (if (zerop n)
-      1
-    (* n (factorial (- n 1)))))
+(require "math.lisp")
 
 (defun problem-20 (max)
   ; a beautiful example of map/reduce usage.
