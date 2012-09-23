@@ -22,16 +22,16 @@
       1
     (* n (factorial (- n 1)))))
 
-(defun fibonacci (x)
-  (if (<= x 2)
+(defun fibonacci (n)
+  (if (<= n 2)
       1
-    (+ (fibonacci (- x 2)) (fibonacci (- x 1)))))
+    (+ (fibonacci (- n 2)) (fibonacci (- n 1)))))
 
-(defun is-prime (num)
-  (if (< 2 num)
+(defun is-prime (n)
+  (if (< 2 n)
       (do ((dividend 2 (1+ dividend))
-	   (chk-to (sqrt num)))
-	  ((equal (rem num dividend) 0))
+	   (chk-to (sqrt n)))
+	  ((equal (rem n dividend) 0))
 	(when (<= chk-to dividend)
 	  (return t)))
     t)
