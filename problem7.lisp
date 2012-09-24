@@ -33,5 +33,5 @@
    (if (is-prime i)
        (when (= (- num 1) (incf n)) (return i)))
      (incf i)))
-    
+
 (print (problem-7 10001))
