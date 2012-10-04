@@ -16,7 +16,7 @@
 ;  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 ;
 ;
-; URL: http://projecteuler.net/problem=10
+; URL: http://projecteuler.net/problem=6
 ; Description: The sum of the squares of the first ten natural numbers is,
 ;              1**2 + 2**2 +...+10**2 = 386
 ;              The square of the sum of the first ten natural numbers is,
