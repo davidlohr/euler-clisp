@@ -38,7 +38,6 @@
   "returns the difference of the sum of the squares of the first num
   natural numbers and the square of the sum"
   (setq sum1 0)
-  (setq sum2 0)
   (loop for i from 1 to num
 	do (incf sum1 (expt i 2)))
   (setq sum2 (reduce '+ (upto num)))
